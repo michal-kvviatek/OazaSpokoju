@@ -1,0 +1,29 @@
+
+.body_image_div {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 450px;
+  background: var(--color-secondary);
+}
+
+.bg-text {
+  & h2 {
+    margin: 70px 0 45px 0;
+    font-size: 3rem;
+    font-family: 'Gloria Hallelujah', cursive;
+  }
+  & h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    font-family: 'Gloria Hallelujah', cursive;
+
+  }
+}
+
+.body_description {
+  text-align: center;
+  margin-bottom: 50px;
+  background-image: url("../accets/pictures/dji_0058.JPG")
+  }

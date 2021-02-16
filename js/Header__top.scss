@@ -1,0 +1,16 @@
+.top_navigation_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top_navigation_wrapper {
+  background-color: black;
+  color: white;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 11;
+}

@@ -1,0 +1,32 @@
+
+.round_photos {
+  background-color: red;
+  width: 100vw;
+  height: 500px;
+
+  .round_photos_div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    height: 500px;
+
+    .round_photo {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background-color: blue;
+    }
+  }
+}
+
+@media (max-width: 768px){
+  .round_photos {
+    height: auto;
+    margin: 30px auto 30px auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
