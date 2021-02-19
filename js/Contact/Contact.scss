@@ -1,0 +1,72 @@
+.contact_div {
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://i.pinimg.com/originals/37/a3/8f/37a38f5919cb66598a387a24d3e0f0fc.jpg");
+  background-size: cover;
+  background-position: center;
+  font-family: 'Gloria Hallelujah', cursive;
+  text-align: center;
+
+  h1 {
+    font-size: 2rem;
+    padding: 40px 40px
+  }
+
+  .contact_div_left {
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.card {
+  width: 600px;
+  background-color: red;
+  border-radius: 3px;
+  overflow: hidden;
+
+  .form {
+    padding: 2rem;
+  }
+
+  .button {
+    display: block;
+    width: 100%;
+    background-color: #e14;
+    border: none;
+    border-radius: 3px;
+    padding: 1ch;
+    font-size: 1rem;
+    color: #fff;
+    font-family: inherit;
+  }
+}
+
+.text-success {
+  font-size: 2rem;
+  color: blue;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.card {
+  width: 500px;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .contact_div {
+    width: 100%;
+    height: auto;
+
+    h1, h2, span {
+      font-size: 1rem;
+    }
+  }
+  .card-body {
+    width: 100%;
+    height: auto;
+  }
+}

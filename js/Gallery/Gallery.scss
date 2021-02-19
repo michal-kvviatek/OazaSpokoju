@@ -1,0 +1,33 @@
+.photos_parent_div {
+  background-image: url("https://www.tapeciarnia.pl/tapety/normalne/217014_morze_plaza_muszla_piasek.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.photos_div {
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .photos {
+    width: 450px;
+    height: auto;
+    margin: 30px;
+    border: 2px solid var(--color-secondary);
+
+  &:hover {
+    transform: scale(1.5);
+  }
+  }
+}
+
+@media (max-width: 768px) {
+
+}
