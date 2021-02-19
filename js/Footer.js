@@ -1,9 +1,8 @@
 import React from "react";
 
-import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
+import {MDBCol, MDBContainer, MDBRow, MDBFooter} from "mdbreact";
 import './Footer.scss';
-import {faEnvelope, } from "@fortawesome/free-solid-svg-icons"
-import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
+import {faEnvelope,} from "@fortawesome/free-solid-svg-icons"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 
@@ -26,12 +25,10 @@ const FooterPage = () => {
                         <ul>
                             <li className="link-list-footer">
                                 <a href="mailto:oazaSpokoju@gmail.com" target="_blank"/>
-                                    <FontAwesomeIcon icon={faEnvelope}/>
+                                <FontAwesomeIcon icon={faEnvelope}/>
                             </li>
-                            <li className="link-list-footer">
-
+                                 <li className="link-list-footer">
                             </li>
-
                         </ul>
                     </MDBCol>
                 </MDBRow>

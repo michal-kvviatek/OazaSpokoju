@@ -3,8 +3,8 @@ import 'bootstrap/scss/bootstrap.scss';
 import '../css/App.scss';
 import './Header__top.scss';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faEnvelope, } from "@fortawesome/free-solid-svg-icons"
-import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
+import {faEnvelope,} from "@fortawesome/free-solid-svg-icons"
+import {faFacebookF} from '@fortawesome/free-brands-svg-icons'
 import ShareLink from 'react-facebook-share-link'
 
 

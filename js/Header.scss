@@ -1,11 +1,4 @@
 
-
-a {
-  color: #000;
-}
-
-/* header */
-
 .header {
   font-family: 'Gloria Hallelujah', cursive;
   margin: 0;
@@ -15,70 +8,88 @@ a {
   position: sticky;
   top: 50px;
   z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  a {
+    color: #000;
+  }
+
+  .logo_img {
+    width: 200px;
+    height: auto;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: var(--color-primary);
+  }
+
+  li a {
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+
+    :hover {
+      background-color: var(--color-primary);
+    }
+  }
+
+  .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+
+  .menu-btn {
+    display: none;
+
+  }
+
+  .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+
+  .navIcon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+
+    :before {
+      top: 5px;
+    }
+
+    :after {
+      top: -5px;
+    }
+
+    :before,
+    :after {
+      background: #333;
+      content: '';
+      display: block;
+      height: 100%;
+      position: absolute;
+      transition: all .2s ease-out;
+      width: 100%;
+    }
+  }
 }
 
-.header ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  overflow: hidden;
-  background-color: var(--color-primary);
-}
-
-.header li a {
-  display: block;
-  padding: 20px 20px;
-  text-decoration: none;
-}
-
-.header li a:hover,
-.header .menu-btn:hover {
-  background-color: var(--color-primary);
-}
-
-.header .logo {
-  background-color: var(--color-primary);
-  display: block;
-  float: left;
-  font-size: 2em;
-  padding: 10px 20px;
-  text-decoration: none;
-}
-
-/* menu */
-
-
-
-
-
-.header .menu {
-  clear: both;
-  max-height: 0;
-  transition: max-height .2s ease-out;
-}
-
-/* menu icon */
-
-.header .menu-icon {
-  cursor: pointer;
-  display: inline-block;
-  float: right;
-  padding: 28px 20px;
-  position: relative;
-  user-select: none;
-}
-
-.header .menu-icon .navicon {
-  background: #333;
-  display: block;
-  height: 2px;
-  position: relative;
-  transition: background .2s ease-out;
-  width: 18px;
-}
-
-.header .menu-icon .navicon:before,
-.header .menu-icon .navicon:after {
+.header .menu-icon .navIcon:before,
+.header .menu-icon .navIcon:after {
   background: #333;
   content: '';
   display: block;
@@ -88,38 +99,25 @@ a {
   width: 100%;
 }
 
-.header .menu-icon .navicon:before {
-  top: 5px;
-}
-
-.header .menu-icon .navicon:after {
-  top: -5px;
-}
-
-/* menu btn */
-
-.header .menu-btn {
-  display: none;
-}
 
 .header .menu-btn:checked ~ .menu {
   max-height: 240px;
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon {
+.header .menu-btn:checked ~ .menu-icon .navIcon {
   background: transparent;
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon:before {
+.header .menu-btn:checked ~ .menu-icon .navIcon:before {
   transform: rotate(-45deg);
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon:after {
+.header .menu-btn:checked ~ .menu-icon .navIcon:after {
   transform: rotate(45deg);
 }
 
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navIcon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navIcon:after {
   top: 0;
 }
 
@@ -129,11 +127,14 @@ a {
     justify-content: center;
     flex-direction: column;
     align-content: center;
-  }
-  .header img {
-    margin: auto auto;
-  }
 
+    .logo_img {
+      width: 100px;
+      height: auto;
+      padding-right: 30px;
+
+    }
+  }
 }
 
 @media (min-width: 768px) {

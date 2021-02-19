@@ -6,7 +6,7 @@ import Footer from "./Footer";
 const Template = ({children}) => {
     return (
         <>
-            <NavigationTop />
+            <NavigationTop/>
             <NavHeader/>
             {children}
             <Footer/>
@@ -15,3 +15,6 @@ const Template = ({children}) => {
 };
 
 export default Template;
+
+
+

@@ -1,0 +1,18 @@
+.carousel_div {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(3, 150, 219, 1) 100%);
+
+  .sliders_pictures {
+    width: auto;
+    height: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel_div {
+    .sliders_pictures{
+      height: 300px;
+    }
+
+  }
+}

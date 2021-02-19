@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bootstrap/scss/bootstrap.scss';
-import '../css/App.scss';
+import '../../css/App.scss';
 import Carousel from 'react-bootstrap/Carousel'
 import './Carousel.scss'
 
@@ -12,7 +12,7 @@ const NavCarousel = () => {
                 <Carousel.Item interval={2000}>
                     <img
                         className="sliders_pictures"
-                        src="../accets/pictures/20200622_221039.jpg"
+                        src="../../accets/pictures/20200622_221039.jpg"
                         alt="First slide"
                     />
                     <Carousel.Caption>
@@ -23,21 +23,21 @@ const NavCarousel = () => {
                 <Carousel.Item interval={2000}>
                     <img
                         className="sliders_pictures"
-                        src="../accets/pictures/20200622_221003.jpg"
+                        src="../../accets/pictures/20200622_221003.jpg"
                         alt="Second slide"
                     />
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
                         className="sliders_pictures"
-                        src="../accets/pictures/DJI_0057.JPG"
+                        src="../../accets/pictures/DJI_0057.JPG"
                         alt="Third slide"
                     />
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
                         className="sliders_pictures"
-                        src="../accets/pictures/DJI_0062.JPG"
+                        src="../../accets/pictures/DJI_0062.JPG"
                         alt="Fourth slide"
                     />
                 </Carousel.Item>

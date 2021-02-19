@@ -1,8 +1,7 @@
 import React from "react";
 import 'bootstrap/scss/bootstrap.scss';
-import '../css/App.scss';
+import '../../css/App.scss';
 import './Body.scss'
-import Image from "react-bootstrap/Image";
 
 const BodyDiv = () => {
     return (
@@ -21,11 +20,9 @@ const BodyDiv = () => {
 
                 </div>
             </div>
-
-
             <div className="body_description">
                 <div className="bg-text">
-                    <Image src="../accets/pictures/dji_0058.JPG" fluid />
+                    <div className="body_description_image"></div>
                     <h2>Nocleg:</h2>
                     <h3>Do Państwa dyspozycji oddajemy trzy domki piętrowe 6 osobowe <br/>
                         oraz jeden domek parterowy - czteroosobowy. <br/>
@@ -36,9 +33,6 @@ const BodyDiv = () => {
             </div>
         </>
     )
-
-
-
 }
 
 export default BodyDiv

@@ -7,12 +7,23 @@
   align-items: center;
   margin: 40px 0 30px 0;
 
+  .about_us_image_fire{
+    background-image: url("https://i.ibb.co/99f4M8s/20200622-221453.jpg");
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+  }
+
   & h2 {
     font-size: 2.3rem;
   }
+
   & h3 {
     font-size: 1.7rem;
   }
+
   & h4 {
     color: #2e293d;
     font-size: 1.5rem;
@@ -20,28 +31,37 @@
   }
 }
 
-.about_us_div{
+.about_us_div {
 
-  .test {
+  .about_us_image {
     background-image: url("https://i.ibb.co/424pznY/jantar-beach.jpg");
     background-size: cover;
     background-position: center;
-    width: 100vw;
+    width: 100%;
     height: 600px;
   }
 }
 
-
 @media (max-width: 768px) {
-  .about_us_description {
+  .about_us_div {
+
+    .about_us_image,
+    .about_us_image_fire {
+      width: 100vw;
+      height: 200px;
+    }
+
+
     & h2 {
-      font-size: 1.5rem;
+      font-size: 1rem;
     }
+
     & h3 {
-      font-size: 1.3rem;
+      font-size: .7rem;
     }
+
     & h4 {
-      font-size: 0.8rem;
+      font-size: .8rem;
     }
   }
 }
